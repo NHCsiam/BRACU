@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class L4_task5
+{
+  public static void main(String[]args)
+  {
+    System.out.println("Enter a number");
+    Scanner keyboard=new Scanner (System.in);
+    int i;
+    for(i=1; i<=20; i++){
+      int number=keyboard.nextInt();
+      if(number%2==0){
+        System.out.print("even");
+      }
+      else {
+        System.out.print("odd");
+      }
+    }
+  }
+}
+   

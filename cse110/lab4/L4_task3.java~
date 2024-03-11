@@ -1,0 +1,17 @@
+public class L4_task3
+{
+  public static void main(string[]args)
+  {
+     int count sum=0;
+     for(count=1; count<=600 ; count++)
+       if(count%7==0)
+     {
+       sum=count+sum;
+     }
+     else if(count%9==0)
+     {
+       sum=count+sum;
+     }
+     System.out.println(sum);
+  }
+}
