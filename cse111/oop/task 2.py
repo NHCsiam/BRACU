@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Aug 29 14:52:52 2020
 
-@author: ASUS
-""" 
 #task 2
 
 class Flower:          

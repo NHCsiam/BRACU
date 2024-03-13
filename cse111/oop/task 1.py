@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Aug 29 14:34:37 2020
-
-@author: ASUS
-"""
-#task 1
-
 class DataType:
     def __init__(self,name,value):
         self.name=name

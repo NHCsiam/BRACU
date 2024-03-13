@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Aug 29 22:23:38 2020
-
-@author: ASUS
-"""
 
 #task 4
 
