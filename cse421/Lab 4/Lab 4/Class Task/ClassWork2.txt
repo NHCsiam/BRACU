@@ -1,0 +1,45 @@
+PC1 => R1
+ping 172.16.1.1
+tracert 172.16.1.1
+
+error wrong ip address on pc1
+ping 172.16.1.1 {all ok}
+
+PC1 => PC2
+ping 172.16.1.4 {all ok}
+
+PC1 => PCA [gives error]
+PC1 => PCB [gives error]
+
+problem on router
+PC1
+connect PC to R1
+ssh -l Admin01 172.16.1.1
+error on router Gigabit 0/1 wrong ip address
+
+config t
+int g0/1
+ip add 172.16.2.1 255.255.255.0
+no shut
+exit
+exit
+show ip int brief
+exit
+PC1 => PCA 
+ping 172.16.2.3 [all ok]
+PC1 => PCB 
+ping 172.16.2.4 [all ok]
+
+
+PC02
+
+ping 172.16.1.1 [ok]
+ping 172.16.2.3 [error]
+ping 172.16.2.4 [error]
+ping 209.165.201.2 [error]
+
+error on pc2 default gateway   
+ping 172.16.2.3 
+ping 172.16.2.4 
+ping 209.165.201.2 
+

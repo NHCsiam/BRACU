@@ -1,0 +1,28 @@
+PC3:
+ipconfig /all
+
+PC1:
+ipconfig /all
+ping 10.10.1.18
+tracert 10.10.1.18
+
+R2:
+enable
+show ip int brief
+config ter
+int s0/0/0
+ip add 10.10.1.5 255.255.255.252
+no shutdown
+exit 
+exit 
+
+PC2:
+ipconfig /all
+ping 
+tracert 2001:DB8:1:4::2
+sh ipv6 int brief 2001:DB8:1:4::2
+
+PC4:
+ipconfig /all
+ping 2001:DB8:1:1::2
+tracert 2001:DB8:1:1::2

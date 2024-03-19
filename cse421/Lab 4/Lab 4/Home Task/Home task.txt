@@ -1,0 +1,9 @@
+R1>en
+R1#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int g0/0
+R1(config-if)#ip helper-add 192.168.60.253
+R1(config-if)#
+R1#
+
+
